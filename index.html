@@ -1,0 +1,15 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Game of Life</title>
+</head>
+<body>
+	<input type="button" value="Save State" onclick="save_simulation(event); alert('This state has been saved to the database!');">
+	<input type="button" value="Load State" onclick="load_simulation(event); alert('Your previous saved state will now be re-loaded.');">
+    <canvas id="canvas" tabindex="1" width="800" height="800" style="border: 1px solid brown; background: lightskyblue"></canvas>
+	<script src="https://cdn.socket.io/socket.io-1.0.0.js"></script>
+    <script type="text/javascript" src="./gol.js"></script>
+</body>
+</html>
